@@ -4,5 +4,8 @@
   },
   "ConnectionStrings": {
     "WorldContextConnection": "Data Source=DIN13001733\\SQLExpress;Initial Catalog=MyDatabase;Integrated Security=True;Pooling=False"
+  },
+  "Keys": {
+    "BingKey": "AmqSnfnsC3RdemBC4nH7IENF5n2dEEmWwpm7DKyxvIOQP77PaoyIUnsp4DoI30Jq"
   }
 }

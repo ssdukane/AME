@@ -1,5 +1,5 @@
---temp-output:C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\
---out:C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\bin\Debug\netcoreapp1.0\TheWorld.dll
+--temp-output:D:\Repos\AME\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\
+--out:D:\Repos\AME\TheWorld\src\TheWorld\bin\Debug\netcoreapp1.0\TheWorld.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -200,23 +200,25 @@
 --reference:C:\Users\sdukane\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\sdukane\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\sdukane\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\TheWorlddotnet-compile.deps.json",TheWorld.deps.json
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Program.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Startup.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Controllers\API\StopsController.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Controllers\API\TripsController.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Controllers\Web\AppController.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Migrations\20170203115203_InitialDatabase.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Migrations\20170203115203_InitialDatabase.Designer.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Migrations\WorldContextModelSnapshot.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\IWorldRepository.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\Stop.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\Trip.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\WorldContext.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\WorldContextSeedData.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Models\WorldRepository.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Services\IMailService.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\Services\MailService.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\ViewModels\ContactViewModel.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\ViewModels\StopViewModel.cs
-C:\Users\sdukane\Documents\Visual Studio 2015\Projects\TheWorld\src\TheWorld\ViewModels\TripViewModel.cs
+--resource:"D:\Repos\AME\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\TheWorlddotnet-compile.deps.json",TheWorld.deps.json
+D:\Repos\AME\TheWorld\src\TheWorld\Program.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Startup.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Controllers\API\StopsController.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Controllers\API\TripsController.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Controllers\Web\AppController.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Migrations\20170203115203_InitialDatabase.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Migrations\20170203115203_InitialDatabase.Designer.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Migrations\WorldContextModelSnapshot.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\IWorldRepository.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\Stop.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\Trip.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\WorldContext.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\WorldContextSeedData.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Models\WorldRepository.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Services\GeoCoordinateService.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Services\GeoCoordsResult.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Services\IMailService.cs
+D:\Repos\AME\TheWorld\src\TheWorld\Services\MailService.cs
+D:\Repos\AME\TheWorld\src\TheWorld\ViewModels\ContactViewModel.cs
+D:\Repos\AME\TheWorld\src\TheWorld\ViewModels\StopViewModel.cs
+D:\Repos\AME\TheWorld\src\TheWorld\ViewModels\TripViewModel.cs

@@ -53,6 +53,8 @@ namespace TheWorld
             services.AddDbContext<WorldContext>();
 
             services.AddScoped<IWorldRepository, WorldRepository>();
+
+            services.AddTransient<GeoCoordinateService>();
             services.AddTransient<WorldContextSeedData>();
 
             services.AddLogging();

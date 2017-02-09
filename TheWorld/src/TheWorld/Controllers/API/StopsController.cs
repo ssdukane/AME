@@ -7,6 +7,7 @@ using TheWorld.Models;
 using Microsoft.Extensions.Logging;
 using AutoMapper;
 using TheWorld.ViewModels;
+using TheWorld.Services;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,11 +19,15 @@ namespace TheWorld.Controllers.API
     {
         private IWorldRepository _repository;
         private ILogger<StopsController> _logger;
+        private GeoCoordinateService _coordService;
 
-        public StopsController(IWorldRepository repository, ILogger<StopsController> logger)
+        public StopsController(IWorldRepository repository, 
+            ILogger<StopsController> logger,
+            GeoCoordinateService coordService)
         {
             _repository = repository;
             _logger = logger;
+            _coordService = coordService;
         }
 
         [HttpGet]
@@ -48,12 +53,27 @@ namespace TheWorld.Controllers.API
             {
                 var newStop = Mapper.Map<Stop>(vm);
 
-                _repository.AddStop(tripName, newStop);
+                //Look up the Geo Codes
 
-                if (await _repository.SaveChangesAsync())
-                { 
-                return Created($"/api/trips/{tripName}/stops/{newStop.Name}",
-                    Mapper.Map<StopViewModel>(newStop));
+                var result = await _coordService.GetCoordinatesAsync(newStop.Name);
+
+                if (!result.Success)
+                {
+                    _logger.LogError(result.Message);
+                }
+                else
+                {
+                    newStop.Latitude = result.Latitude;
+                    newStop.Longitude = result.Longitude;
+
+                    //save to database
+                    _repository.AddStop(tripName, newStop);
+
+                    if (await _repository.SaveChangesAsync())
+                    {
+                        return Created($"/api/trips/{tripName}/stops/{newStop.Name}",
+                            Mapper.Map<StopViewModel>(newStop));
+                    }
                 }
             }
             catch (Exception ex)
