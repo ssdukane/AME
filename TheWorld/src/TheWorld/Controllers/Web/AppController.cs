@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using TheWorld.Models;
 using TheWorld.Services;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -30,9 +31,18 @@ namespace TheWorld.Controllers.Web
         public IActionResult Index()
         {
             //var data = _context.Trips.ToList();
-            var data = _repository.GetAllTrips();
             
-            return View(data);
+            // var data = _repository.GetAllTrips();
+            //return View(data);
+
+            return View("Index");
+        }        
+        
+        public IActionResult Trips()
+        {            
+            var trips = _repository.GetAllTrips();
+
+            return View(trips);
         }
 
         public IActionResult Contact()

@@ -13,14 +13,16 @@
     "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.1",
     "Microsoft.Extensions.Configuration": "1.0.1",
     "Microsoft.Extensions.Configuration.Json": "1.0.1",
-    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
     "Microsoft.EntityFrameworkCore.Tools": {
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
     "Microsoft.Extensions.Logging.Debug": "1.1.0",
-    "AutoMapper": "4.2.1"
+    "AutoMapper": "4.2.1",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+      "Microsoft.AspNet.Authorization": "1.0.0-rc1-final"
     },
 
   "tools": {
